@@ -44,6 +44,8 @@ In a SQL worksheet:
 - Type `cts`
 - In theory, pressing Ctrl+Space will complete the snippet, but I find that only actually works ~20% of the time
 - Double clicking on the preview of the snippet seems to always work though
+- Change the name of the schema from `(schema)` to the schema name you want
+- Write your SQL to create the schema objects at the end of the script
 
 ## bashrc git utils
 
