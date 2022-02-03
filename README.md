@@ -44,3 +44,17 @@ In a SQL worksheet:
 - Type `cts`
 - In theory, pressing Ctrl+Space will complete the snippet, but I find that only actually works ~20% of the time
 - Double clicking on the preview of the snippet seems to always work though
+
+## bashrc git utils
+
+### What the functions do
+
+- `clean-git-branches`: deletes all branches that are already merged in
+- `clone`: ensures a GitHub repository is cloned at a standard location
+- `get-ready`: `clone` + fetch + checkout origin/main in detached head + `clean-git-branches`, ie get ready for new work
+
+### How to install
+
+- Create `~/.bashrc` if it doesn't exist
+- Copy the contents of `bashrc/git-utils.sh` into it
+- Edit the `REPOS_ROOT` and `DefaultUser` variables at the top of the script to be where you want repos checked out, and which user to assume when no user is provided
